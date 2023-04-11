@@ -1,3 +1,7 @@
+
+<body>
+
+  <img src="../assets/top.png" alt="img" class="img">
 <h2>Class Scheduler</h2>
 
     
@@ -85,3 +89,4 @@
     <div cdkDropList  #summer4list="cdkDropList" [cdkDropListData]="Summer4" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Summer4" cdkDrag>{{class}}</div>
     </div>
+  </body>
