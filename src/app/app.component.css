@@ -29,3 +29,43 @@ img {
     padding: 10px;
     margin-bottom: 10px;
   }
+
+  .cdk-drop-list {
+    column-count: 2;
+  }
+
+  .container {
+    display: flex;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .container2 {
+    display: flex;
+  }
+  
+  .column2 {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .container3 {
+    display: flex;
+  }
+  
+  .column3 {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .container4 {
+    display: flex;
+  }
+  
+  .column4 {
+    flex: 1;
+    padding: 20px;
+  }

@@ -2,91 +2,140 @@
 <body>
 
   <img src="../assets/top.png" alt="img" class="img">
-<h2>Class Scheduler</h2>
+<h1>Class Scheduler</h1>
 
-    
-<h3>Extra</h3>
+
+
+<h3>Remaining Classes</h3>
 <div cdkDropList #extraList="cdkDropList" [cdkDropListData]="extra" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
   <div *ngFor="let class of extra" cdkDrag>{{class}}</div>
 </div>
 
+
+
+<div class="container">
+<div class="column">
     <h3>Fall 1</h3>
     <div cdkDropList #fall1list="cdkDropList" [cdkDropListData]="Fall1" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Fall1" cdkDrag>{{class}}</div>
     </div>
+  </div>
 
+
+<div class="column">
     <h3>Winter 1</h3>
     <div cdkDropList  #winter1list="cdkDropList" [cdkDropListData]="Winter1" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Winter1" cdkDrag>{{class}}</div>
     </div>
+  </div>
 
+  <div class="column">
     <h3>Spring 1</h3>
     <div cdkDropList  #spring1list="cdkDropList" [cdkDropListData]="Spring1" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Spring1" cdkDrag>{{class}}</div>
     </div>
 
+  </div>
+
+
+<div class="column">
     <h3>Summer 1</h3>
     <div cdkDropList  #summer1list="cdkDropList" [cdkDropListData]="Summer1" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Summer1" cdkDrag>{{class}}</div>
     </div>
+  </div>
+    </div>
+
+    <div class="container2">
+      <div class="column2">
 
     <h3>Fall 2</h3>
     <div cdkDropList  #fall2list="cdkDropList" [cdkDropListData]="Fall2" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Fall2" cdkDrag>{{class}}</div>
     </div>
+  </div>
 
+  <div class="column2">
     <h3>Winter 2</h3>
     <div cdkDropList  #winter2list="cdkDropList" [cdkDropListData]="Winter2" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Winter2" cdkDrag>{{class}}</div>
     </div>
+  </div>
 
+  <div class="column2">
     <h3>Spring 2</h3>
     <div cdkDropList  #spring2list="cdkDropList" [cdkDropListData]="Spring2" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Spring2" cdkDrag>{{class}}</div>
     </div>
+  </div>
 
+  <div class="column2">
     <h3>Summer 2</h3>
     <div cdkDropList  #summer2list="cdkDropList" [cdkDropListData]="Summer2" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Summer2" cdkDrag>{{class}}</div>
     </div>
+  </div>
+  </div>
 
+  <div class="container3">
+    <div class="column3">
     <h3>Fall 3</h3>
     <div cdkDropList  #fall3list="cdkDropList" [cdkDropListData]="Fall3" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Fall3" cdkDrag>{{class}}</div>
     </div>
-
+  </div>
+  <div class="column3">
     <h3>Winter 3</h3>
     <div cdkDropList  #winter3list="cdkDropList" [cdkDropListData]="Winter3" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Winter3" cdkDrag>{{class}}</div>
     </div>
+  </div>
 
+  <div class="column3">
     <h3>Spring 3</h3>
     <div cdkDropList  #spring3list="cdkDropList" [cdkDropListData]="Spring3" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Spring3" cdkDrag>{{class}}</div>
     </div>
+  </div>
 
+  <div class="column3">
     <h3>Summer 3</h3>
     <div cdkDropList  #summer3list="cdkDropList" [cdkDropListData]="Summer3" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Summer3" cdkDrag>{{class}}</div>
     </div>
+  </div>
+  </div>
 
+
+  <div class="container4">
+    <div class="column4">
     <h3>Fall 4</h3>
     <div cdkDropList  #fall4list="cdkDropList" [cdkDropListData]="Fall4" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Fall4" cdkDrag>{{class}}</div>
     </div>
+  </div>
 
+  <div class="column4">
     <h3>Winter 4</h3>
     <div cdkDropList  #winter4list="cdkDropList" [cdkDropListData]="Winter4" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Winter4" cdkDrag>{{class}}</div>
     </div>
+  </div>
 
+  <div class="column4">
     <h3>Spring 4</h3>
     <div cdkDropList  #spring4list="cdkDropList" [cdkDropListData]="Spring4" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Spring4" cdkDrag>{{class}}</div>
     </div>
+  </div>
 
+  <div class="column4">
     <h3>Summer 4</h3>
     <div cdkDropList  #summer4list="cdkDropList" [cdkDropListData]="Summer4" [cdkDropListConnectedTo]="[fall1list, extraList, winter1list, spring1list, summer1list, fall2List, winter2list, spring2list, summer2list, fall3list, winter3list, spring3list, summer3list, fall4list, winter4list, spring4list, summer4list]" (cdkDropListDropped)="drop($event)">
       <div *ngFor="let class of Summer4" cdkDrag>{{class}}</div>
     </div>
+  </div>
+
+  </div>
+
   </body>
